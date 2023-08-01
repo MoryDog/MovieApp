@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A2054BEC2A78B93200DA4959 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054BEB2A78B93200DA4959 /* MovieService.swift */; };
-		A2054BEE2A78BE5700DA4959 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054BED2A78BE5700DA4959 /* Utilities.swift */; };
+		A2054BEE2A78BE5700DA4959 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054BED2A78BE5700DA4959 /* Utils.swift */; };
+		A2054BF02A78C6D600DA4959 /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054BEF2A78C6D600DA4959 /* TMDBService.swift */; };
 		A26078F52A77CA3B00210F28 /* MovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26078F42A77CA3B00210F28 /* MovieAppApp.swift */; };
 		A26078F72A77CA3B00210F28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26078F62A77CA3B00210F28 /* ContentView.swift */; };
 		A26078F92A77CA3C00210F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26078F82A77CA3C00210F28 /* Assets.xcassets */; };
@@ -20,7 +21,8 @@
 
 /* Begin PBXFileReference section */
 		A2054BEB2A78B93200DA4959 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
-		A2054BED2A78BE5700DA4959 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A2054BED2A78BE5700DA4959 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A2054BEF2A78C6D600DA4959 /* TMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBService.swift; sourceTree = "<group>"; };
 		A26078F12A77CA3B00210F28 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26078F42A77CA3B00210F28 /* MovieAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppApp.swift; sourceTree = "<group>"; };
 		A26078F62A77CA3B00210F28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A2054BEB2A78B93200DA4959 /* MovieService.swift */,
+				A2054BEF2A78C6D600DA4959 /* TMDBService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -84,7 +87,7 @@
 				A26078F62A77CA3B00210F28 /* ContentView.swift */,
 				A26078F82A77CA3C00210F28 /* Assets.xcassets */,
 				A26078FA2A77CA3C00210F28 /* Preview Content */,
-				A2054BED2A78BE5700DA4959 /* Utilities.swift */,
+				A2054BED2A78BE5700DA4959 /* Utils.swift */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -188,7 +191,8 @@
 				A26078F72A77CA3B00210F28 /* ContentView.swift in Sources */,
 				A26079042A77CAB100210F28 /* MovieRow.swift in Sources */,
 				A26079092A77CE2900210F28 /* MovieData.swift in Sources */,
-				A2054BEE2A78BE5700DA4959 /* Utilities.swift in Sources */,
+				A2054BF02A78C6D600DA4959 /* TMDBService.swift in Sources */,
+				A2054BEE2A78BE5700DA4959 /* Utils.swift in Sources */,
 				A26079072A77CC9700210F28 /* Movie.swift in Sources */,
 				A26078F52A77CA3B00210F28 /* MovieAppApp.swift in Sources */,
 			);

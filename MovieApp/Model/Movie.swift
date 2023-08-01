@@ -140,13 +140,7 @@ struct Movie: Identifiable, Decodable {
             formatter.allowedUnits = [.hour, .minute]
             return formatter
         }()
-    }
-
-    struct Utils {
-        static let dateFormatter: DateFormatter = {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "dd-MM-yyyy"
-            return formatter
-        }()
 }
+
+
 

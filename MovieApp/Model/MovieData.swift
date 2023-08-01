@@ -25,7 +25,7 @@ extension Bundle {
                     throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: [], debugDescription: "Invalid JSON file"))
                 }
                 let data = try Data(contentsOf: url)
-                let jsonDecoder = Utilities.jsonDecoder
+                let jsonDecoder = Utils.jsonDecoder
                 do {
                     let decodedModel = try jsonDecoder.decode(D.self, from: data)
                     return decodedModel

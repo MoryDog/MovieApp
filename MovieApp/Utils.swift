@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Utilities {
+class Utils {
     static let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
