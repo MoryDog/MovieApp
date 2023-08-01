@@ -12,6 +12,7 @@ class TMDBService: MovieService {
     static let shared = TMDBService()
     private init() {}
     
+    // TMDB API Key
     private let apiKey = "5527b18ae50ad689d0ef20a6cf25619c"
     private let baseAPIURL = "https://api.themoviedb.org/3"
     private let urlSession = URLSession.shared
