@@ -26,10 +26,11 @@ struct MovieCard: View {
             .cornerRadius(8)
             .shadow(radius: 4)
             
-            HStack {
+            HStack (){
+        
                 Text(movie.title).font(.headline).padding(5)
                 Spacer()
-                Text(movie.releaseDate ?? "n/a").padding(5)
+                Text(movie.yearText).font(.subheadline).padding(5)
             }
             
         }

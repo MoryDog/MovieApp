@@ -12,7 +12,15 @@ struct MovieDetailView: View {
     @ObservedObject private var movieDetailState = MovieDetailState()
     
     var body: some View {
-        ZStack {}
+        ZStack {
+            LoadingView(isLoading: self.movieDetailState.isLoading, error: self.movieDetailState.error) {
+                self.movieDetailState.loadMovie(id: self.movieId)
+            }
+            
+            if movieDetailState.movie != nil {
+                // ...
+            }
+        }
     }
 }
 
