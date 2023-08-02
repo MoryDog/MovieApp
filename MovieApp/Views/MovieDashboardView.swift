@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MovieListView: View {
+struct MovieDashboardView: View {
     @ObservedObject private var nowPlayingState = MovieListState()
     @ObservedObject private var upcomingState = MovieListState()
     @ObservedObject private var topRatedState = MovieListState()
@@ -55,7 +55,9 @@ struct MovieListView: View {
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                 
-                
+                List {
+                    
+                }
                 
                 
             }
@@ -71,8 +73,8 @@ struct MovieListView: View {
     }
 }
 
-struct MovieListView_Previews: PreviewProvider {
+struct MovieDashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieListView()
+        MovieDashboardView()
     }
 }

@@ -12,6 +12,7 @@ struct MovieCard: View {
     @ObservedObject var imageLoader = ImageLoader()
     
     var body: some View {
+        
         VStack(alignment: .leading) {
             ZStack {
                 Rectangle()
@@ -20,12 +21,13 @@ struct MovieCard: View {
                 if self.imageLoader.image != nil {
                     Image(uiImage: self.imageLoader.image!)
                         .resizable()
+
                 }
             }
             .aspectRatio(16/9, contentMode: .fit)
             .cornerRadius(8)
             .shadow(radius: 4)
-            
+
             HStack (){
         
                 Text(movie.title).font(.headline).padding(5)
