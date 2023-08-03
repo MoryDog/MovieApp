@@ -26,7 +26,7 @@ struct MovieCardCarousel: View {
                 HStack(alignment: .top, spacing: 16) {
                     ForEach(self.movies) { movie in
                         NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
-                            MovieCard(movie: movie).frame(width: 272, height: 200)
+                            MovieCard(movie: movie).frame(width: 250, height: 180)
                         }
                         .buttonStyle(PlainButtonStyle())
                         .padding(.leading, movie.id == self.movies.first!.id ? 16 : 0)

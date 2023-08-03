@@ -15,8 +15,6 @@ struct MovieRow: View {
         
         HStack() {
             ZStack {
-//                Rectangle()
-//                    .fill(Color.gray.opacity(0.3))
                 
                 if self.imageLoader.image != nil {
                     Image(uiImage: self.imageLoader.image!)
@@ -34,12 +32,15 @@ struct MovieRow: View {
                 HStack() {
         
                     VStack(alignment: .leading, spacing: 4.0) {
-                        Text("DUNE: Part 2").font(.headline)
-                        Text("Denis Villeneuve")
-                                            .font(.subheadline)
+                        Text(movie.title).font(.headline)
+                        if movie.directors != nil && movie.directors!.count > 0 {
+                            ForEach(self.movie.directors!.prefix(2)) { crew in
+                                Text(crew.name).font(.subheadline)
+                            }
+                        }
                                         Group {
-                                            Text("Action, Adventure, Sci-Fi, Drama")
-                                            Text("195 min")
+                                            Text(movie.genreText)
+                                            Text(movie.durationText)
                                         }
                                         .font(.caption)
                                         .foregroundColor(.secondary)
@@ -48,8 +49,6 @@ struct MovieRow: View {
                 }
                 
 
-
-             
             
         }
         .lineLimit(1)

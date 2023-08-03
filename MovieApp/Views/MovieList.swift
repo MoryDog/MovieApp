@@ -11,19 +11,21 @@ struct MovieList: View {
     let movies: [Movie]
     
     var body: some View {
-        NavigationView {
+       
             List(self.movies){
                 movie in
                 NavigationLink{
                     MovieDetailView(movieId: movie.id)
-                } label: {
-                    MovieRow(movie: movie)
-
                 }
-                .navigationTitle("All Movies")
+                label: {
+                    MovieRow(movie: movie)
+                }
             }
-        }
+            .frame(height: 600)
+    
+
     }
+    
 }
 
 struct MovieList_Previews: PreviewProvider {
