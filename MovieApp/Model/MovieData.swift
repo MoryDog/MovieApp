@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 extension Movie {
     static var sampleMovies: [Movie] {
         guard let response: MovieResponse = try? Bundle.main.decodeJSON(filename: "movie_list")

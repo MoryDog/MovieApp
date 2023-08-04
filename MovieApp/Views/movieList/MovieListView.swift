@@ -7,29 +7,27 @@
 
 import SwiftUI
 
-struct MovieList: View {
+struct MovieListView: View {
     let movies: [Movie]
     
     var body: some View {
-       
+        NavigationView() {
             List(self.movies){
                 movie in
                 NavigationLink{
                     MovieDetailView(movieId: movie.id)
                 }
-                label: {
-                    MovieRow(movie: movie)
+            label: {
+                MovieRow(movie: movie)
                 }
             }
-            .frame(height: 600)
-    
-
+        }.navigationBarTitle(Text("All movies"))
     }
     
 }
 
 struct MovieList_Previews: PreviewProvider {
     static var previews: some View {
-        MovieList(movies: Movie.sampleMovies)
+        MovieListView(movies: Movie.sampleMovies)
     }
 }

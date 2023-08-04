@@ -20,6 +20,7 @@ struct MovieCardCarousel: View {
                     .padding(.horizontal)
                     .padding(.bottom)
                 Spacer()
+        
                 }
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -33,6 +34,7 @@ struct MovieCardCarousel: View {
                         .padding(.trailing, movie.id == self.movies.last!.id ? 16 : 0)
                     }
                 }
+                
             }
         }
     }

@@ -29,31 +29,77 @@ struct MovieDetailView: View {
     }
 }
 
+
 struct MovieDetailListView: View {
-    
     let movie: Movie
+    private let availableColors: [Color] = [.red, .blue, .green, .orange, .purple, .pink]
+    
+    
    // @State private var selectedTrailer: MovieVideo?
     let imageLoader = ImageLoader()
+    @State var isOverviewExpanded: Bool = false
     
     var body: some View {
         List {
-    
             MovieDetailImage(imageLoader: imageLoader, imageURL: self.movie.backdropURL!, overlayText: movie.title)
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             HStack {
-                Text(movie.genreText)
+                if let date = movie.releaseDate {
+                    Text(date.prefix(4)).font(.subheadline).bold()
+                }
                 Spacer()
-                Text("·")
+                Text("•")
                 Spacer()
-                Text(movie.yearText)
+                if let runtime = movie.runtime {
+                    Text("\(runtime) minutes")
+                        .font(.subheadline).bold()
+                }
                 Spacer()
-                Text("·")
+                Text("•")
                 Spacer()
-                Text(movie.durationText)
+                if let status = movie.status {
+                    Text("\(status)")
+                        .font(.subheadline).bold()
+                }
+
+            }
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Overview").bold()
+                Text(movie.overview)
+                    .font(.subheadline)
+                    .lineLimit(self.isOverviewExpanded ? nil : 4)
+                    .onTapGesture {
+                        withAnimation {
+                            self.isOverviewExpanded.toggle()
+                        }
+                    }
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        withAnimation(Animation.easeInOut(duration: 0.4)) {
+                            self.isOverviewExpanded.toggle()
+                        }
+                    }, label: {
+                        Text(self.isOverviewExpanded ? "Less" : "Read more")
+                            .font(.subheadline)
+                            .foregroundColor(.cyan)
+                    }).padding(.trailing, 5)
+                }
+            }
+            HStack {
+                ScrollView(.horizontal, showsIndicators: false){
+                    if let genres = movie.genres {
+                        HStack {
+                            ForEach(genres.indices, id: \.self) { index in
+                                RoundedBadge(text: genres[index].name, color: availableColors[index])
+                                    .padding(.top, 2)
+                            }
+                        }
+                    }
+                }
             }
             
-            Text(movie.overview)
             HStack {
                 Text("Ratings: ").bold()
                 if !movie.ratingText.isEmpty {

@@ -31,17 +31,17 @@ struct MovieDashboardView: View {
                     }
                     .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                     
-    //                Group {
-    //                    if popularState.movies != nil {
-    //                        MovieCardCarousel(title: "Popular", movies: popularState.movies!)
-    //
-    //                    } else {
-    //                        LoadingView(isLoading: self.popularState.isLoading, error: self.popularState.error) {
-    //                            self.popularState.loadMovies(with: .popular)
-    //                        }
-    //                    }
-    //                }
-    //                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
+                    Group {
+                        if popularState.movies != nil {
+                            MovieCardCarousel(title: "Popular", movies: popularState.movies!)
+    
+                        } else {
+                            LoadingView(isLoading: self.popularState.isLoading, error: self.popularState.error) {
+                                self.popularState.loadMovies(with: .popular)
+                            }
+                        }
+                    }
+                    .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
                     Group {
                         if upcomingState.movies != nil {
                             MovieCardCarousel(title: "Upcoming", movies: upcomingState.movies!)

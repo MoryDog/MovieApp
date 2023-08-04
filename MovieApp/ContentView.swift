@@ -18,6 +18,14 @@ struct ContentView: View {
                     }
             }
             .tag(0)
+            MovieListView(movies: Movie.sampleMovies)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "list.dash")
+                        Text("Browse")
+                    }
+            }
+            .tag(1)
             
             MovieSearchView()
                 .tabItem {
@@ -26,7 +34,7 @@ struct ContentView: View {
                         Text("Search")
                     }
             }
-            .tag(0)
+            .tag(2)
         }
     }
 }

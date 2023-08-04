@@ -22,10 +22,21 @@ struct Movie: Identifiable, Decodable {
     let voteCount: Int
     let runtime: Int?
     let releaseDate: String?
+    let status: String?
     
     let genres: [MovieGenre]?
     let credits: MovieCredit?
     let videos: MovieVideoResponse?
+    
+    var release_Date: Date? {
+        return releaseDate != nil ? Movie.dateFormatter.date(from: releaseDate!) : Date()
+    }
+    
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
     
     var backdropURL: URL? {
             guard let backdropPath = backdropPath else { return nil }
@@ -65,7 +76,7 @@ struct Movie: Identifiable, Decodable {
             }
             return Movie.durationFormatter.string(from: TimeInterval(runtime) * 60) ?? "n/a"
         }
-        
+    
         var cast: [MovieCast]? {
             return credits?.cast
         }
@@ -91,7 +102,7 @@ struct Movie: Identifiable, Decodable {
         }
     }
 
-    struct MovieGenre: Decodable {
+    struct MovieGenre: Decodable, Hashable {
         let name: String
     }
 
@@ -115,6 +126,7 @@ struct Movie: Identifiable, Decodable {
     struct MovieVideoResponse: Decodable {
         let results: [MovieVideo]
     }
+
 
     struct MovieVideo: Decodable, Identifiable {
         let id: String

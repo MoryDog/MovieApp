@@ -32,7 +32,9 @@ struct MovieCard: View {
         
                 Text(movie.title).font(.headline).padding(5)
                 Spacer()
-                Text(movie.yearText).font(.subheadline).padding(5)
+                if let date = movie.releaseDate {
+                    Text(date.prefix(4)).font(.subheadline)
+                }
             }
             
         }
