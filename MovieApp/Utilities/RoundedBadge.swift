@@ -24,13 +24,14 @@ public struct RoundedBadge : View {
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.primary)
-                .padding(.leading, 10)
+                .padding(.leading,10)
+                .padding(.trailing,10)
                 .padding([.top, .bottom], 5)
-            Image(systemName: "chevron.right")
-                .resizable()
-                .frame(width: 5, height: 10)
-                .foregroundColor(.primary)
-                .padding(.trailing, 10)
+//            Image(systemName: "chevron.right")
+//                .resizable()
+//                .frame(width: 5, height: 10)
+//                .foregroundColor(.primary)
+//                .padding(.trailing, 10)
             
             }
             .background(

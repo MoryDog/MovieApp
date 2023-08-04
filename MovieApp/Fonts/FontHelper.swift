@@ -10,24 +10,28 @@ import SwiftUI
 
 extension Font {
     public static func ProximaNova(size: CGFloat) -> Font {
-        return Font.custom("Proxima Nova", size: size)
+        return Font.custom("Proxima Nova Medium", size: size)
+    }
+    
+    public static func FjallaOne(size: CGFloat) -> Font {
+        return Font.custom("FjallaOne-Regular", size: size)
     }
 }
 
-struct MovieTitleFont: ViewModifier {
+struct TitleFont: ViewModifier {
     let size: CGFloat
     
     func body(content: Content) -> some View {
-        return content.font(.ProximaNova(size: size))
+        return content.font(.FjallaOne(size: size))
     }
 }
 
 extension View {
     func titleFont(size: CGFloat) -> some View {
-        return ModifiedContent(content: self, modifier: MovieTitleFont(size: size))
+        return ModifiedContent(content: self, modifier: TitleFont(size: size))
     }
     
     func titleStyle() -> some View {
-        return ModifiedContent(content: self, modifier: MovieTitleFont(size: 16))
+        return ModifiedContent(content: self, modifier: TitleFont(size: 18))
     }
 }

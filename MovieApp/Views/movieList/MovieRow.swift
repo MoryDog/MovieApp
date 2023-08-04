@@ -28,7 +28,7 @@ struct MovieRow: View {
         
                 HStack() {
                     VStack(alignment: .leading, spacing: 4.0) {
-                        Text(movie.title).titleStyle().foregroundColor(Color("CinemaGold"))
+                        Text(movie.title).titleStyle().foregroundColor(Color("CinemaGold")).lineLimit(2)
                         if movie.directors != nil && movie.directors!.count > 0 {
                             ForEach(self.movie.directors!.prefix(2)) { crew in
                                 Text(crew.name).font(.subheadline)

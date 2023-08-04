@@ -74,9 +74,10 @@ struct MovieDashboardView: View {
         }
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)
+            self.popularState.loadMovies(with: .popular)
             self.upcomingState.loadMovies(with: .upcoming)
             self.topRatedState.loadMovies(with: .topRated)
-            self.popularState.loadMovies(with: .popular)
+        
         }
         
         

@@ -13,7 +13,7 @@ struct ContentView: View {
             MovieDashboardView(movies: Movie.sampleMovies)
                 .tabItem {
                     VStack {
-                        Image(systemName: "tv")
+                        Image(systemName: "play.tv")
                         Text("Movies")
                     }
             }
@@ -37,6 +37,7 @@ struct ContentView: View {
             .tag(2)
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
