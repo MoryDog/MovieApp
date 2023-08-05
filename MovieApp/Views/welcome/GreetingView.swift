@@ -30,7 +30,7 @@ struct GreetingView: View {
                                 .presentationDetents([.height(200)])
                                 .presentationDragIndicator(.visible)
                         }
-                }.padding(.top, -30).padding(.trailing, 25)
+                }.padding(.top, -20).padding(.trailing, 25)
            
                Spacer()
                 
