@@ -39,6 +39,7 @@
 		A26079092A77CE2900210F28 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26079082A77CE2900210F28 /* MovieData.swift */; };
 		A26F87ED2A7A61F000CB23DC /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F87EC2A7A61F000CB23DC /* MovieListView.swift */; };
 		A2A6DA2C2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A6DA2B2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf */; };
+		A2A6DA2E2A7E6E5D006C4CD4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A6DA2D2A7E6E5D006C4CD4 /* InfoView.swift */; };
 		A2D7E0E72A7BD1150082ED0A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0E62A7BD1150082ED0A /* SearchBar.swift */; };
 		A2D7E0E92A7BD12C0082ED0A /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0E82A7BD12C0082ED0A /* MovieSearchView.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		A26F87E82A7A4E9E00CB23DC /* MovieDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDashboardView.swift; sourceTree = "<group>"; };
 		A26F87EC2A7A61F000CB23DC /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		A2A6DA2B2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Nova-Italic.ttf"; sourceTree = "<group>"; };
+		A2A6DA2D2A7E6E5D006C4CD4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		A2D7E0E62A7BD1150082ED0A /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A2D7E0E82A7BD12C0082ED0A /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 			children = (
 				A226547F2A7D2508004D1A50 /* GreetingView.swift */,
 				A226547C2A7D1FFD004D1A50 /* WelcomeView.swift */,
+				A2A6DA2D2A7E6E5D006C4CD4 /* InfoView.swift */,
 			);
 			path = welcome;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				A26079042A77CAB100210F28 /* MovieRow.swift in Sources */,
 				A22654632A7CBE98004D1A50 /* MovieDashboardView.swift in Sources */,
 				A22654612A7CBE28004D1A50 /* MovieDetailView.swift in Sources */,
+				A2A6DA2E2A7E6E5D006C4CD4 /* InfoView.swift in Sources */,
 				A226546F2A7CDE6D004D1A50 /* RoundedBadge.swift in Sources */,
 				A2054C052A791B9100DA4959 /* MoviePosterCarousel.swift in Sources */,
 				A26079092A77CE2900210F28 /* MovieData.swift in Sources */,

@@ -10,13 +10,29 @@ import SwiftUI
 struct GreetingView: View {
     @Binding var active: Bool
     @State private var showMainContent = false
+    @State private var showInfoPopup = false
     
     var body: some View {
         ZStack{
 //            Color("CustomBlue").ignoresSafeArea(.all, edges: .all)
             Image("WelcomeScreenImage").resizable().ignoresSafeArea(.all, edges: .all)
             VStack(spacing: 20){
-                Spacer()
+                HStack {
+                    Spacer()
+                    Button {
+                        showInfoPopup.toggle()
+                        } label: {
+                            Image(systemName: "info.circle")
+                                .font(.title)
+                                .foregroundColor(.white)
+                        }.sheet(isPresented: $showInfoPopup) {
+                            InfoView()
+                                .presentationDetents([.height(200)])
+                                .presentationDragIndicator(.visible)
+                        }
+                }.padding(.top, -30).padding(.trailing, 25)
+           
+               Spacer()
                 
                 Image("Clapper").resizable().frame(width: 200, height: 200)
                 VStack{
@@ -50,7 +66,7 @@ struct GreetingView: View {
                             .tabItem {
                                 VStack {
                                     Image(systemName: "play.tv")
-                                    Text("Movies")
+                                    Text("Home")
                                 }
                             }
                             .tag(0)

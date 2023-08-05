@@ -24,7 +24,7 @@ struct MovieListView: View {
             }.navigationBarItems(leading: Text("All Movies").font(.custom("FjallaOne-Regular", size: 30))
                 .foregroundColor(Color("CinemaGold"))
             ).padding(.top, -20)
-            
+                
         }
     }
     
