@@ -8,8 +8,40 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State var isWelcomeActive: Bool = true
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if isWelcomeActive {
+            GreetingView(active: $isWelcomeActive)
+        } else {
+            TabView {
+                MovieDashboardView(movies: Movie.sampleMovies)
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "play.tv")
+                            Text("Movies")
+                        }
+                }
+                .tag(0)
+                MovieListView(movies: Movie.sampleMovies)
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "list.dash")
+                            Text("Browse")
+                        }
+                }
+                .tag(1)
+                
+                MovieSearchView()
+                    .tabItem {
+                        VStack {
+                            Image(systemName: "magnifyingglass")
+                            Text("Search")
+                        }
+                }
+                .tag(2)
+            }
+        }
     }
 }
 

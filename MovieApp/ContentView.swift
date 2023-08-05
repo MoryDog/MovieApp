@@ -8,34 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        TabView {
-            MovieDashboardView(movies: Movie.sampleMovies)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "play.tv")
-                        Text("Movies")
-                    }
-            }
-            .tag(0)
-            MovieListView(movies: Movie.sampleMovies)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "list.dash")
-                        Text("Browse")
-                    }
-            }
-            .tag(1)
-            
-            MovieSearchView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "magnifyingglass")
-                        Text("Search")
-                    }
-            }
-            .tag(2)
-        }
+        WelcomeView()
     }
     
 }
