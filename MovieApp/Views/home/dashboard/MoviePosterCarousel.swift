@@ -15,7 +15,8 @@ struct MoviePosterCarousel: View {
         VStack(alignment: .leading,spacing: 0) {
             
             Text(title)
-                .font(.title)
+                .font(.custom("FjallaOne-Regular", size: 28))
+                .foregroundColor(Color("CinemaGold"))
                 .fontWeight(.bold)
                 .padding(.horizontal)
                 .padding(.bottom)

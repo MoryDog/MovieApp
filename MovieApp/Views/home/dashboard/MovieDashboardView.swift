@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MovieDashboardView: View {
+    @State private var isDarkMode = false
     let movies: [Movie]
     @ObservedObject private var nowPlayingState = MovieListState()
     @ObservedObject private var upcomingState = MovieListState()
@@ -17,6 +18,7 @@ struct MovieDashboardView: View {
     var body: some View {
         NavigationView {
             VStack {
+
                 List {
                     Group {
                         if nowPlayingState.movies != nil {
@@ -68,7 +70,16 @@ struct MovieDashboardView: View {
                     
                     
                 }
-                .navigationBarTitle("MovieDB")
+                .navigationBarItems(leading: Text("Home").font(.custom("FjallaOne-ReGULAR", size: 30))
+                    .foregroundColor(Color("CinemaGold"))
+                ).padding(.top, -20)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Toggle(isOn: $isDarkMode) {
+                                Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle").foregroundColor(isDarkMode ? .white : .black)
+                            }
+                        }
+                    }.preferredColorScheme(isDarkMode ? .dark : .light)
             }
             
         }

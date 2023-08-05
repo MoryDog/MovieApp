@@ -19,29 +19,22 @@ struct MovieRow: View {
                         .resizable()
                         .cornerRadius(8)
                         .clipped()
-                        .frame(width: 100, height: 170)
+                        .frame(width: 110, height: 170)
                         .aspectRatio(contentMode: .fit)
 
                 }
             }
             .fixedSize()
-        
                 HStack() {
-                    VStack(alignment: .leading, spacing: 4.0) {
-                        Text(movie.title).titleStyle().foregroundColor(Color("CinemaGold")).lineLimit(2)
-                        if movie.directors != nil && movie.directors!.count > 0 {
-                            ForEach(self.movie.directors!.prefix(2)) { crew in
-                                Text(crew.name).font(.subheadline)
-                            }
-                        }
-                                        
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(movie.title).titleStyle().foregroundColor(Color("CinemaGold")).lineLimit(2).padding(.bottom,10)
+                    
                         Text(Utils.dateFormatter.string(from: movie.release_Date ?? Date()))
                             .font(.subheadline)
-                            .foregroundColor(.primary)
+                            .foregroundColor(.primary).padding(.bottom, 10)
                         Text(movie.overview)
-                            .font(.caption)
                             .foregroundColor(.secondary)
-                            .lineLimit(2)
+                            .lineLimit(3)
                             .truncationMode(.tail)
                     }
                     Spacer()

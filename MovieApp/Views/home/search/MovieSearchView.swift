@@ -37,7 +37,9 @@ struct MovieSearchView: View {
             .onAppear {
                 self.movieSearchState.startObserve()
             }
-            .navigationBarTitle("Search")
+            .navigationBarItems(leading: Text("Search").font(.custom("FjallaOne-ReGULAR", size: 30))
+                .foregroundColor(Color("CinemaGold"))
+            ).padding(.top, -20)
         }
     }
 }
