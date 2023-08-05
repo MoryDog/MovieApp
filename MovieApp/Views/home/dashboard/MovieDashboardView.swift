@@ -18,7 +18,6 @@ struct MovieDashboardView: View {
     var body: some View {
         NavigationView {
             VStack {
-
                 List {
                     Group {
                         if nowPlayingState.movies != nil {

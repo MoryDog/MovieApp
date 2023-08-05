@@ -38,6 +38,7 @@
 		A26079072A77CC9700210F28 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26079062A77CC9700210F28 /* Movie.swift */; };
 		A26079092A77CE2900210F28 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26079082A77CE2900210F28 /* MovieData.swift */; };
 		A26F87ED2A7A61F000CB23DC /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F87EC2A7A61F000CB23DC /* MovieListView.swift */; };
+		A2A6DA2C2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A6DA2B2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf */; };
 		A2D7E0E72A7BD1150082ED0A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0E62A7BD1150082ED0A /* SearchBar.swift */; };
 		A2D7E0E92A7BD12C0082ED0A /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0E82A7BD12C0082ED0A /* MovieSearchView.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		A26079082A77CE2900210F28 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		A26F87E82A7A4E9E00CB23DC /* MovieDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDashboardView.swift; sourceTree = "<group>"; };
 		A26F87EC2A7A61F000CB23DC /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		A2A6DA2B2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Nova-Italic.ttf"; sourceTree = "<group>"; };
 		A2D7E0E62A7BD1150082ED0A /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A2D7E0E82A7BD12C0082ED0A /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		A22654572A7C97D4004D1A50 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				A2A6DA2B2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf */,
 				A22654742A7D146F004D1A50 /* Proxima Nova Medium.ttf */,
 				A22654722A7D0F3D004D1A50 /* FjallaOne-Regular.ttf */,
 				A22654582A7C9915004D1A50 /* Proxima Nova Font.otf */,
@@ -327,6 +330,7 @@
 				A2054BF92A78FEEB00DA4959 /* movie_list.json in Resources */,
 				A22654752A7D146F004D1A50 /* Proxima Nova Medium.ttf in Resources */,
 				A2054BF82A78FEEB00DA4959 /* movie_details.json in Resources */,
+				A2A6DA2C2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,10 @@ extension Font {
     public static func FjallaOne(size: CGFloat) -> Font {
         return Font.custom("FjallaOne-Regular", size: size)
     }
+    
+    public static func ProximaNovaItalic(size: CGFloat) -> Font {
+        return Font.custom("ProximaNovaRegularItalic", size: size)
+    }
 }
 
 struct TitleFont: ViewModifier {

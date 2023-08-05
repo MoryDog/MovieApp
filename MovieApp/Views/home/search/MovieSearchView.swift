@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovieSearchView: View {
     @ObservedObject var movieSearchState = SearchMovieState()
+    @State private var isDarkMode = false
     
     var body: some View {
         NavigationView {

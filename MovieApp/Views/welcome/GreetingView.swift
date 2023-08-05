@@ -13,22 +13,22 @@ struct GreetingView: View {
     
     var body: some View {
         ZStack{
-            Color("LightPink").ignoresSafeArea(.all, edges: .all)
-            
+//            Color("CustomBlue").ignoresSafeArea(.all, edges: .all)
+            Image("WelcomeScreenImage").resizable().ignoresSafeArea(.all, edges: .all)
             VStack(spacing: 20){
                 Spacer()
                 
-                Image("MovieAppIcon").aspectRatio(contentMode: .fit).frame(width: 120)
+                Image("Clapper").resizable().frame(width: 200, height: 200)
                 VStack{
                     Text("MovieDB")
-                        .font(.custom("FjallaOne-Regular", size: 45))
+                        .font(.custom("FjallaOne-Regular", size: 45)).foregroundColor(Color("CinemaGold"))
                         .fontWeight(.heavy)
                         .foregroundColor(.white).padding(.bottom, 2)
-                    //                        Text("Cinema is a world of imagination")
-                    //                            .font(.custom("Proxima Nova Medium", size: 20))
-                    //                        .fontWeight(.light)
-                    //                        .foregroundColor(.white)
-                    //                        .multilineTextAlignment(.center)
+                                            Text("\"Cinema is a world of imagination\"")
+                        .font(.custom("ProximaNova-RegularIt", size: 20))
+                                            .fontWeight(.light)
+                                            .foregroundColor(.white)
+                                            .multilineTextAlignment(.center)
                     
                 }.padding(.trailing, 10).padding(.leading, 20)
                 Spacer()
@@ -36,14 +36,14 @@ struct GreetingView: View {
                 Button(action: {
                     showMainContent = true
                 }, label: {
-                    Capsule()
+                    RoundedRectangle(cornerRadius: 10)
                         .fill(Color.white.opacity(0.2))
                         .padding(8)
-                        .frame(height:80)
-                        .overlay(Text("Get Started")
+                        .frame(width: 360, height:80)
+                        .overlay(Text("View Movies")
                             .font(.system(.title3, design: .rounded))
                             .fontWeight(.bold)
-                            .foregroundColor(.white))
+                            .foregroundColor(Color("CinemaGold")))
                 }).fullScreenCover(isPresented: $showMainContent) {
                     TabView {
                         MovieDashboardView(movies: Movie.sampleMovies)

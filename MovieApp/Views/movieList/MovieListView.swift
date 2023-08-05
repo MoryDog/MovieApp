@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovieListView: View {
     let movies: [Movie]
+    @State private var isDarkMode = false
     
     var body: some View {
         NavigationView() {
@@ -23,6 +24,7 @@ struct MovieListView: View {
             }.navigationBarItems(leading: Text("All Movies").font(.custom("FjallaOne-Regular", size: 30))
                 .foregroundColor(Color("CinemaGold"))
             ).padding(.top, -20)
+            
         }
     }
     
