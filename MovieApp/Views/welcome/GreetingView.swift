@@ -57,7 +57,7 @@ struct GreetingView: View {
                 Button(action: {
                     showMainContent = true
                 }, label: {
-                    RoundedRectangle(cornerRadius: 30)
+                    RoundedRectangle(cornerRadius: 25)
                         .fill(Color.white.opacity(0.3))
                         .padding(8)
                         .frame(width: 340, height:75)
