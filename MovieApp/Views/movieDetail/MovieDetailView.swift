@@ -1,9 +1,15 @@
-//
-//  MovieDetail.swift
-//  MovieApp
-//
-//  Created by Huy Hua Nam on 01/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 
@@ -32,16 +38,13 @@ struct MovieDetailView: View {
 
 struct MovieDetailListView: View {
     let movie: Movie
-    private let availableColors: [Color] = [.red, .blue, .green, .orange, .purple, .pink]
-    
-    
-   // @State private var selectedTrailer: MovieVideo?
     let imageLoader = ImageLoader()
     @State var isOverviewExpanded: Bool = false
+    private let availableColors: [Color] = [.red, .blue, .green, .orange, .purple, .pink]
     
     var body: some View {
         List {
-            MovieDetailImage(imageLoader: imageLoader, imageURL: self.movie.backdropURL!, overlayText: movie.title)
+            MovieDetailImage(imageLoader: imageLoader, imageURL: self.movie.backdropURL!)
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             HStack {
@@ -150,7 +153,6 @@ struct MovieDetailListView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 }
             }
-            
         }
         
     }
@@ -159,7 +161,6 @@ struct MovieDetailListView: View {
 struct MovieDetailImage: View {
     @ObservedObject var imageLoader: ImageLoader
     let imageURL: URL
-    let overlayText: String
     
     var body: some View {
         ZStack{
@@ -179,6 +180,9 @@ struct MovieDetailImage: View {
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movieId: Movie.sampleMovie.id)
+        NavigationView {
+            MovieDetailView(movieId: Movie.sampleMovie.id)
+            
+        }
     }
 }

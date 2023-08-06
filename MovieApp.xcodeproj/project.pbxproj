@@ -20,7 +20,7 @@
 		A2054C012A7915EB00DA4959 /* SearchMovieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C002A7915EB00DA4959 /* SearchMovieState.swift */; };
 		A2054C032A79199E00DA4959 /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C022A79199E00DA4959 /* MoviePosterCard.swift */; };
 		A2054C052A791B9100DA4959 /* MoviePosterCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C042A791B9100DA4959 /* MoviePosterCarousel.swift */; };
-		A2054C072A791BA200DA4959 /* MovieCardCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C062A791BA200DA4959 /* MovieCardCarousel.swift */; };
+		A2054C072A791BA200DA4959 /* MovieBackdropCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C062A791BA200DA4959 /* MovieBackdropCarousel.swift */; };
 		A2054C0B2A79224700DA4959 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C0A2A79224700DA4959 /* LoadingView.swift */; };
 		A226545A2A7C99D5004D1A50 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22654592A7C99D5004D1A50 /* FontHelper.swift */; };
 		A22654612A7CBE28004D1A50 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054C082A791D7D00DA4959 /* MovieDetailView.swift */; };
@@ -42,6 +42,8 @@
 		A2A6DA2E2A7E6E5D006C4CD4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A6DA2D2A7E6E5D006C4CD4 /* InfoView.swift */; };
 		A2D7E0E72A7BD1150082ED0A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0E62A7BD1150082ED0A /* SearchBar.swift */; };
 		A2D7E0E92A7BD12C0082ED0A /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7E0E82A7BD12C0082ED0A /* MovieSearchView.swift */; };
+		A2F4F2622A7FACDA00A723BC /* Oswald.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2F4F2612A7FACDA00A723BC /* Oswald.ttf */; };
+		A2F4F2662A7FB93B00A723BC /* Bodoni Poster Compressed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2F4F2652A7FB93B00A723BC /* Bodoni Poster Compressed.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,10 +60,9 @@
 		A2054C002A7915EB00DA4959 /* SearchMovieState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieState.swift; sourceTree = "<group>"; };
 		A2054C022A79199E00DA4959 /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
 		A2054C042A791B9100DA4959 /* MoviePosterCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarousel.swift; sourceTree = "<group>"; };
-		A2054C062A791BA200DA4959 /* MovieCardCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardCarousel.swift; sourceTree = "<group>"; };
+		A2054C062A791BA200DA4959 /* MovieBackdropCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarousel.swift; sourceTree = "<group>"; };
 		A2054C082A791D7D00DA4959 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		A2054C0A2A79224700DA4959 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		A22654582A7C9915004D1A50 /* Proxima Nova Font.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Font.otf"; sourceTree = "<group>"; };
 		A22654592A7C99D5004D1A50 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 		A226546E2A7CDE6D004D1A50 /* RoundedBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBadge.swift; sourceTree = "<group>"; };
 		A22654722A7D0F3D004D1A50 /* FjallaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FjallaOne-Regular.ttf"; sourceTree = "<group>"; };
@@ -83,6 +84,8 @@
 		A2A6DA2D2A7E6E5D006C4CD4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		A2D7E0E62A7BD1150082ED0A /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A2D7E0E82A7BD12C0082ED0A /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
+		A2F4F2612A7FACDA00A723BC /* Oswald.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Oswald.ttf; sourceTree = "<group>"; };
+		A2F4F2652A7FB93B00A723BC /* Bodoni Poster Compressed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bodoni Poster Compressed.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +132,11 @@
 		A22654572A7C97D4004D1A50 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				A2F4F2652A7FB93B00A723BC /* Bodoni Poster Compressed.ttf */,
+				A2F4F2612A7FACDA00A723BC /* Oswald.ttf */,
 				A2A6DA2B2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf */,
 				A22654742A7D146F004D1A50 /* Proxima Nova Medium.ttf */,
 				A22654722A7D0F3D004D1A50 /* FjallaOne-Regular.ttf */,
-				A22654582A7C9915004D1A50 /* Proxima Nova Font.otf */,
 				A22654592A7C99D5004D1A50 /* FontHelper.swift */,
 			);
 			path = Fonts;
@@ -161,7 +165,7 @@
 				A2054BFA2A79012F00DA4959 /* MovieBackdropCard.swift */,
 				A2054C022A79199E00DA4959 /* MoviePosterCard.swift */,
 				A2054C042A791B9100DA4959 /* MoviePosterCarousel.swift */,
-				A2054C062A791BA200DA4959 /* MovieCardCarousel.swift */,
+				A2054C062A791BA200DA4959 /* MovieBackdropCarousel.swift */,
 				A26F87E82A7A4E9E00CB23DC /* MovieDashboardView.swift */,
 			);
 			path = dashboard;
@@ -327,11 +331,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2054BF72A78FEEB00DA4959 /* search_movies.json in Resources */,
+				A2F4F2662A7FB93B00A723BC /* Bodoni Poster Compressed.ttf in Resources */,
 				A26078FC2A77CA3C00210F28 /* Preview Assets.xcassets in Resources */,
 				A22654732A7D0F3D004D1A50 /* FjallaOne-Regular.ttf in Resources */,
 				A26078F92A77CA3C00210F28 /* Assets.xcassets in Resources */,
 				A2054BF92A78FEEB00DA4959 /* movie_list.json in Resources */,
 				A22654752A7D146F004D1A50 /* Proxima Nova Medium.ttf in Resources */,
+				A2F4F2622A7FACDA00A723BC /* Oswald.ttf in Resources */,
 				A2054BF82A78FEEB00DA4959 /* movie_details.json in Resources */,
 				A2A6DA2C2A7E5A42006C4CD4 /* Proxima-Nova-Italic.ttf in Resources */,
 			);
@@ -360,7 +366,7 @@
 				A2054C012A7915EB00DA4959 /* SearchMovieState.swift in Sources */,
 				A22654802A7D2508004D1A50 /* GreetingView.swift in Sources */,
 				A226545A2A7C99D5004D1A50 /* FontHelper.swift in Sources */,
-				A2054C072A791BA200DA4959 /* MovieCardCarousel.swift in Sources */,
+				A2054C072A791BA200DA4959 /* MovieBackdropCarousel.swift in Sources */,
 				A2054BEE2A78BE5700DA4959 /* Utils.swift in Sources */,
 				A2054BFF2A7915BF00DA4959 /* MovieDetailState.swift in Sources */,
 				A26079072A77CC9700210F28 /* Movie.swift in Sources */,

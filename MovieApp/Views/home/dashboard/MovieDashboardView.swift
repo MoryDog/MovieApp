@@ -1,9 +1,15 @@
-//
-//  MovieListView.swift
-//  MovieApp
-//
-//  Created by Huy Hua Nam on 02/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 
@@ -34,7 +40,7 @@ struct MovieDashboardView: View {
                     
                     Group {
                         if popularState.movies != nil {
-                            MovieCardCarousel(title: "Popular", movies: popularState.movies!)
+                            MovieBackdropCarousel(title: "Popular", movies: popularState.movies!)
     
                         } else {
                             LoadingView(isLoading: self.popularState.isLoading, error: self.popularState.error) {
@@ -45,7 +51,7 @@ struct MovieDashboardView: View {
                     .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
                     Group {
                         if upcomingState.movies != nil {
-                            MovieCardCarousel(title: "Upcoming", movies: upcomingState.movies!)
+                            MovieBackdropCarousel(title: "Upcoming", movies: upcomingState.movies!)
                         } else {
                             LoadingView(isLoading: self.upcomingState.isLoading, error: self.upcomingState.error) {
                                 self.upcomingState.loadMovies(with: .upcoming)
@@ -56,7 +62,7 @@ struct MovieDashboardView: View {
                     
                     Group {
                         if topRatedState.movies != nil {
-                            MovieCardCarousel(title: "Top Rated", movies: topRatedState.movies!)
+                            MovieBackdropCarousel(title: "Top Rated", movies: topRatedState.movies!)
                             
                         } else {
                             LoadingView(isLoading: self.topRatedState.isLoading, error: self.topRatedState.error) {
@@ -76,12 +82,12 @@ struct MovieDashboardView: View {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Toggle(isOn: $isDarkMode) {
                                 Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle").foregroundColor(isDarkMode ? .white : .black)
-                            }
+                            }.accentColor(Color.clear)
                         }
                     }.preferredColorScheme(isDarkMode ? .dark : .light)
             }
             
-        }
+        }.accentColor(Color("CinemaGold"))
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)
             self.popularState.loadMovies(with: .popular)

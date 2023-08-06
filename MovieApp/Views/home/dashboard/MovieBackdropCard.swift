@@ -1,9 +1,14 @@
-//
-//  MovieCard.swift
-//  MovieApp
-//
-//  Created by Huy Hua Nam on 01/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
 
 import SwiftUI
 
@@ -25,11 +30,10 @@ struct MovieBackdropCard: View {
                 }
             }
             .aspectRatio(16/9, contentMode: .fit)
-            .cornerRadius(8)
-            .shadow(radius: 4)
+            .cornerRadius(10)
+            .shadow(radius: 5)
 
             HStack (){
-        
                 Text(movie.title).font(.headline).padding(5)
                 Spacer()
                 if let date = movie.releaseDate {

@@ -1,10 +1,15 @@
-//
-//  SearchBar.swift
-//  SwiftUIMovieDb
-//
-//  Created by Alfian Losari on 24/05/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 

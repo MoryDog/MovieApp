@@ -1,13 +1,19 @@
-//
-//  MovieCardCarousel.swift
-//  MovieApp
-//
-//  Created by Huy Hua Nam on 01/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 
-struct MovieCardCarousel: View {
+struct MovieBackdropCarousel: View {
     let title: String
     let movies: [Movie]
     
@@ -15,8 +21,8 @@ struct MovieCardCarousel: View {
         VStack(alignment: .leading,spacing: 0) {
             HStack {
                 Text(title)
-                    .font(.custom("FjallaOne-Regular", size: 28)).foregroundColor(Color("CinemaGold"))
-                    .fontWeight(.bold)
+                    .font(.custom("Oswald", size: 28)).foregroundColor(Color("CinemaGold"))
+                  
                     .padding(.horizontal)
                     .padding(.bottom)
                 Spacer()
@@ -42,6 +48,6 @@ struct MovieCardCarousel: View {
 
 struct MovieCardCarousel_Previews: PreviewProvider {
     static var previews: some View {
-        MovieCardCarousel(title: "Latest", movies: Movie.sampleMovies)
+        MovieBackdropCarousel(title: "Latest", movies: Movie.sampleMovies)
     }
 }

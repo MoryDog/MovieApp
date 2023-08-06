@@ -1,9 +1,15 @@
-//
-//  GreetingView.swift
-//  ContactList
-//
-//  Created by Tom Huynh on 7/26/22.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 
@@ -34,13 +40,12 @@ struct GreetingView: View {
            
                Spacer()
                 
-                Image("Clapper").resizable().frame(width: 200, height: 200)
+                Image("Clapper").resizable().frame(width: 200, height: 200).shadow(color: .orange, radius: 15, x:4 , y:4)
                 VStack{
-                    Text("MovieDB")
-                        .font(.custom("FjallaOne-Regular", size: 45)).foregroundColor(Color("CinemaGold"))
-                        .fontWeight(.heavy)
+                    Text("MovieHub")
+                        .font(.custom("Bodoni-PosterCompressed", size: 45)).foregroundColor(Color("CinemaGold"))
                         .foregroundColor(.white).padding(.bottom, 2)
-                                            Text("\"Cinema is a world of imagination\"")
+                    Text("\"Cinema is a world of imagination\"")
                         .font(.custom("ProximaNova-RegularIt", size: 20))
                                             .fontWeight(.light)
                                             .foregroundColor(.white)
@@ -52,10 +57,10 @@ struct GreetingView: View {
                 Button(action: {
                     showMainContent = true
                 }, label: {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white.opacity(0.2))
+                    RoundedRectangle(cornerRadius: 30)
+                        .fill(Color.white.opacity(0.3))
                         .padding(8)
-                        .frame(width: 360, height:80)
+                        .frame(width: 340, height:75)
                         .overlay(Text("View Movies")
                             .font(.system(.title3, design: .rounded))
                             .fontWeight(.bold)

@@ -1,9 +1,15 @@
-//
-//  MoviePosterCarousel.swift
-//  MovieApp
-//
-//  Created by Huy Hua Nam on 01/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Hua Nam Huy
+  ID: s3881103
+  Created  date: 31/7/2023
+  Last modified: 6/8/2023
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 
@@ -13,11 +19,10 @@ struct MoviePosterCarousel: View {
     
     var body: some View {
         VStack(alignment: .leading,spacing: 0) {
-            
+            //Oswald
             Text(title)
-                .font(.custom("FjallaOne-Regular", size: 28))
+                .font(.custom("Oswald", size: 28))
                 .foregroundColor(Color("CinemaGold"))
-                .fontWeight(.bold)
                 .padding(.horizontal)
                 .padding(.bottom)
                 
