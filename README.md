@@ -1,8 +1,9 @@
-RMIT University Vietnam
-COSC2659 - iOS Development
+RMIT University Vietnam /
+COSC2659 - iOS Development /
 Semester 2023B
 
 Assignment 1 - MovieHub App
+
 Hua Nam Huy - s3881103
 
 References:
